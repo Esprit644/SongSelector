@@ -22,9 +22,9 @@ class MusicContainer extends Component{
 
     handleMusicSelected(index){
         
-        const selectedSong = this.state.musics.feed.entry[index]['im:name'].label
+        const selectedSong = this.state.musics.feed.entry[index]//['im:name'].label
         this.setState({currentSelectedSong: selectedSong})
-        console.log("whatis this", currentSelectedSong);
+        //console.log("whatis this", currentSelectedSong);
 
     }
 

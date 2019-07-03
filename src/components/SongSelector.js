@@ -3,7 +3,7 @@ import SongDetails from './SongDetails';
 
 const SongSelector = (props) => {
     console.log("dfsfd", props)
-    if(props.music.length == 0) return null
+    if(props.music.length === 0) return null
 
             const options = props.music.feed.entry.map((song, index) => {
                 return <option value = {index}>{index + 1}: {song['im:name'].label}</option>
